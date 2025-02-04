@@ -26,6 +26,7 @@ const Book = ({ book }) => {
                 <div className="border-t-2 border-dashed"></div>
                 <div className="card-actions justify-between">
                     <div className="badge badge-outline">{category}</div>
+                    <p>Pages: {totalPages}</p>
                     
                   <div>
                   <span>{rating} </span>

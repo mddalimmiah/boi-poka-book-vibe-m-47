@@ -1,4 +1,5 @@
 import { getItem } from "localforage";
+import { toast } from "react-toastify";
 
 const getStoredReadList = () =>{
 
@@ -23,6 +24,8 @@ const addToStoredReadList =(id) =>{
         storedList.push(id);
         const storedListStr =JSON.stringify(storedList);
         localStorage.setItem('read-list', storedListStr);
+        // ideally trigger from the toast 
+        toast('This is to added to your read list')
     }
 }
 
